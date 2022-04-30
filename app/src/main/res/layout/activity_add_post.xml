@@ -62,14 +62,14 @@
                 android:onClick="changePhoto"/>
 
             <EditText
+                android:id="@+id/txtDescAddPost"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:inputType="textMultiLine"
+                android:background="@drawable/txt_background"
                 android:gravity="left"
-                android:textSize="15sp"
-                android:id="@+id/txtDescAddPost"
+                android:inputType="textMultiLine"
                 android:padding="8dp"
-                android:background="@drawable/txt_background"/>
+                android:textSize="15sp" />
 
             <Button
                 android:layout_width="match_parent"

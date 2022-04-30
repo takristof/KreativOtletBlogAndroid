@@ -88,16 +88,16 @@ public class ProfileFragment extends Fragment {
                     JSONObject user = object.getJSONObject("user");
                     txtName.setText(user.getString("name"));
                     txtPostsCount.setText(arrayList.size()+"");
-                    if(object.has("photo")) {
+                    //if(object.has("photo")) {
                         Picasso.get().load(APIcalls.URL + "storage/profiles" + user.getString("photo")).into(imgProfile);
-                    }
+                    //}
                     adapter = new AccountAdapter(getContext(),arrayList);
                     recyclerView.setAdapter(adapter);
-                    if(object.has("photo")) {
+                    //if(object.has("photo")) {
                         imgUrl = APIcalls.URL + "storage/profiles" + user.getString("photo");
-                    }else{
-                        imgUrl=APIcalls.URL+ "storage/placeholder";
-                    }
+                    //}else{
+                        //imgUrl=APIcalls.URL+ "storage/placeholder";
+                    //}
                     }
 
 
